@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home learn</title>
+    <style>
+        *{
+		   margin:0px;
+		   padding:0px;
+		   box-sizing:border-box;
+		   font-family:Arial,sans-serif;
+		}
+		.background
+		{
+		    top:0;
+			left:0;
+			position:absolute;
+			height:100%;
+			width:100%;
+			background-color:#0b1523;;
+		}
+		.shape
+		{
+		    top:0;
+			left:0;
+			position:absolute;
+			height:100%;
+			width:100%;
+			background:#0b1523;
+			
+		}
+		.container
+		{
+		 display:flex;
+		 justify-content: space-between;
+		 align-items:center;
+		 height:100vh;
+		 padding:0px 80px;
+		 position:relative;
+		}
+		.card{
+		  background:#B9C0C8;
+		  box-shadow:0px 7px 20px #1D74AC;
+		  margin:0px 15px;
+		  min-width:300px;
+		  text-align:center;
+		  transition:0.2s ease;
+		  height:300px;
+		  
+		}
+		.card:hover{
+		  transform:translateY(-10px);
+		}
+		.card .image img{
+		  width:100%;
+		  height:auto;
+		}
+		.card .content {
+		     padding:10px 20px;
+		}
+		.card .content h5{
+		     color:red;
+			 font-size:18px;
+		}
+		.card .content p{
+		     margin-top:5px;
+		     color:black;
+			 font-size:12px;
+		}
+		
+		.heading {
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            width: 100%;
+	    margin-top:60px;
+        }
+	
+       
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #135bc0;
+    height: 85px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 27px;
+    font-weight: bold;
+    border: 2px solid #5dc1b9;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links a{
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.auth-buttons a{
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.auth-buttons .signup-btn {
+    padding: 8px 16px;
+    background-color: #0066ff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}	
+    </style>
+</head>
+<body>
+<div class="background"></div>
+<div class="shape">
+     <nav class="navbar">
+            <div class="logo">EDUVERSE</div>
+            <div class="nav-links" style="margin-left: -370px; margin-bottom: -7px;">
+                <a href="#" style="margin-left: -200px;">How it Works</a>
+                <a href="#" style="margin-left: 25px;">About</a>
+                <a href="#" style="margin-left: 16px;">Resources</a>
+            </div>    
+    
+            <div class="auth-buttons">
+                <a href="page1.html" class="login-btn">Home</a>
+                <a href="page2.html" class="signup-btn">Sign Up</a>
+            </div>
+        </nav>
+     <div class="heading">
+    <h1 style="font-size: 2rem;">Courses</h1>
+</div>
+</div>
+
+<div class="container">
+   <div class="card">
+     <div class="image">
+	    <a href="page13.html" target="_blank"><img src="images/one.jpeg" /></a>
+	 </div>
+	 <div class="content">
+	    <h5>Master C Programming</h5>
+		<p> Learn the fundamentals of C programming language, from basic syntax to advanced concepts. Develop strong problem-solving skills and the ability to write efficient, high-performance code.</p>
+	 </div>
+   </div>
+   <div class="card">
+     <div class="image">
+	    <img src="images/two.jpeg">
+	 </div>
+	 <div class="content">
+	    <h5>Explore Blockchain & Cryptocurrency</h5>
+		<p>Understand blockchain technology and create your own cryptocurrency and decentralized apps.</p>
+	 </div>
+   </div>
+   <div class="card">
+     <div class="image">
+	    <img src="images/three.jpeg" style="height:183px;">
+	 </div>
+	 <div class="content">
+	    <h5>Design Exceptional User Experiences</h5>
+		<p>Design user-friendly interfaces with a focus on intuitive, seamless user experiences.</p>
+	    
+	 </div>
+   </div>
+   <div class="card">
+     <div class="image">
+	    <img src="images/four.jpeg" style="height:179px;width:300px;">
+	 </div>
+	 <div class="content">
+		<h5>Build Modern Web Applications</h5>
+		<p>Learn both front-end and back-end skills to develop complete web applications from scratch.</p>
+	 </div>
+   </div>
+</div>
+
+</body>
+</html>

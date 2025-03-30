@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: orange;
+        }
+
+        /* Card Styles */
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #0C1524;
+        }
+
+        .card-header h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        ol {
+            margin-left: 20px;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        ol li {
+            margin-bottom: 15px;
+        }
+
+        /* Option Styles */
+        .form-check {
+            margin: 5px 0;
+        }
+
+        .form-check-label {
+            font-family: Arial, sans-serif;
+            font-size: 0.9rem;
+            color:white;
+            margin-left: 5px;
+        }
+
+        /* Button Styles */
+        .submit-btn {
+            display: block;
+            width: 30%;
+            padding: 10px;
+            border: none;
+            background-color: blue;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+            margin-left:270px;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #135bc0;
+    height: 85px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 27px;
+    font-weight: bold;
+    border: 2px solid #5dc1b9;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links a{
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.auth-buttons a{
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.auth-buttons .signup-btn {
+    padding: 8px 16px;
+    background-color: #0066ff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body style="background-color: #0C1524;">
+ <nav class="navbar">
+            <div class="logo">EDUVERSE</div>
+            <div class="nav-links" style="margin-left: -370px; margin-bottom: -7px;">
+                <a href="#" style="margin-left: -200px;">How it Works</a>
+                <a href="#" style="margin-left: 25px;">About</a>
+                <a href="#" style="margin-left: 16px;">Resources</a>
+            </div>    
+    
+            <div class="auth-buttons">
+                <a href="page1.html" class="login-btn">Home</a>
+                <a href="page2.html" class="signup-btn">Sign Up</a>
+            </div>
+        </nav>
+<div class="container">
+    <h1>Assignment Page</h1>
+
+    <!-- Topic 1 Section -->
+    <div class="card">
+        <div class="card-header">
+            <h2>Topics Covered: "Types of Operators in C" and "Operator Precedence"</h2>
+        </div>
+        <div class="card-body">
+            <form>
+                <ol>
+                    <li>
+                        <strong>What will be the output of the expression 5 + 3 * 2?</strong>
+                        <div class="form-check">
+                            <input type="radio" name="question1" id="q1a" value="a">
+                             a) 16</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="question1" id="q1b" value="b">
+                            b) 11</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="question1" id="q1c" value="c">
+                            c) 13</label>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Which of the following correctly uses a ternary operator?</strong>
+                        <div class="form-check">
+                            <input type="radio" name="question2" id="q2a" value="a">
+                            a) x ? y : z;</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="question2" id="q2b" value="b">
+                            b) x ? : z : y;</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="question2" id="q2c" value="c">
+                            c) x < y : z;</label>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>In C, what type of operator is sizeof?</strong>
+                        <div class="form-check">
+                            <input type="radio" name="question3" id="q3a" value="a">
+                            a) Logical</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="question3" id="q3b" value="b">
+                            b) Bitwise</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="question3" id="q3c" value="c">
+                            c) Unary</label>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>What is the result of the following expression if int x = 4; and int y = 3;: x & y?</strong>
+                        <div class="form-check">
+                            <input type="radio" name="question4" id="q4a" value="a">
+                            a) 4</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="question4" id="q4b" value="b">
+                            b) 0</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="question4" id="q4c" value="c">
+                            c) 1</label>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Which operator has the highest precedence in C?</strong>
+                        <div class="form-check">
+                            <input type="radio" name="question5" id="q5a" value="a">
+                            a) + (Addition)</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="question5" id="q5b" value="b">
+                            b) * (Multiplication)</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="question5" id="q5c" value="c">
+                            c) () (Parentheses)</label>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>In the expression a + b * c - d / e, which operation is performed first?</strong>
+                        <div class="form-check">
+                            <input type="radio" name="question6" id="q6a" value="a">
+                            a) a + b</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="question6" id="q6b" value="b">
+                            b) d / e</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="question6" id="q6c" value="c">
+                            c) b * c</label>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>In C, which of the following operators has the lowest precedence?</strong>
+                        <div class="form-check">
+                            <input type="radio" name="question7" id="q7a" value="a">
+                            a) &&</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="question7" id="q7b" value="b">
+                            b) =</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="question7" id="q7c" value="c">
+                            c) +</label>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>For the expression a = b = c = 10;, how does operator precedence affect evaluation?</strong>
+                        <div class="form-check">
+                            <input type="radio" name="question8" id="q8a" value="a">
+                            a) c = 10 is evaluated last</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="question8" id="q8b" value="b">
+                            b) a = b = c is evaluated first</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="question8" id="q8c" value="c">
+                            c) c = 10 is evaluated first</label>
+                        </div>
+                    </li>
+                </ol>
+            </form> 
+        </div>
+    </div>
+    <button type="button" onclick="checkAnswers()" class="submit-btn">Submit Assignment</button>
+</div>
+
+<script>
+    window.onload = function () {
+    // Check if the module is completed when the page loads
+    if (localStorage.getItem("module1Completed") === "true") {
+        alert("You have already completed Module 3!");
+        window.location.href = "page14.html"; // Redirects to example.html
+    }
+};
+
+// Define checkAnswers() in the global scope
+function checkAnswers() {
+    let correctAnswers = 0;
+
+    // Check each question
+    if (document.querySelector('input[name="question1"]:checked')?.value === 'b') correctAnswers++;
+    if (document.querySelector('input[name="question2"]:checked')?.value === 'a') correctAnswers++;
+    if (document.querySelector('input[name="question3"]:checked')?.value === 'c') correctAnswers++;
+    if (document.querySelector('input[name="question4"]:checked')?.value === 'b') correctAnswers++;
+    if (document.querySelector('input[name="question5"]:checked')?.value === 'c') correctAnswers++;
+    if (document.querySelector('input[name="question6"]:checked')?.value === 'c') correctAnswers++;
+    if (document.querySelector('input[name="question7"]:checked')?.value === 'b') correctAnswers++;
+    if (document.querySelector('input[name="question8"]:checked')?.value === 'c') correctAnswers++;
+
+    // If score is 6 or more
+    if (correctAnswers >= 6) {
+        // Store completion status in localStorage
+        localStorage.setItem("module1Completed", "true");
+
+        // Show confirmation with a redirect option
+        const proceed = confirm("You have completed Module 1 with " + correctAnswers + " correct answers. Do you want to continue?");
+        if (proceed) {
+            window.location.href = 'page14.html'; // Redirect if they choose to continue
+        }
+    } else {
+        alert("You have to get more than 6 correct answers. Please redo the assignment.");
+    }
+}
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelancer Project Brief</title>
+  <link rel="stylesheet" href="page11.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Tell us what you need <span class="highlight">done.</span></h1>
+      <p>We'll guide you to create the perfect brief. The more detail the better.</p>
+    </header>
+
+    <div class="notification">
+      <p>
+        <i>We've automatically loaded a project you were working on 1 day ago.</i> You can continue working on it below. 
+        Pressing 'Discard' will clear the form and remove the draft forever.
+      </p>
+      <button class="discard-btn">Discard</button>
+    </div>
+
+    <form class="project-form">
+      <label for="project-name">Project name</label>
+      <input type="text" id="project-name" name="project-name" placeholder="Windows-Based GUI for Simple Voting System" value="Windows-Based GUI for Simple Voting System">
+
+      <label for="project-description">Project description</label>
+      <textarea id="project-description" name="project-description" rows="10">
+I'm looking for a capable C programmer to develop a simple, single-choice voting system with a graphical user interface (GUI) tailored for Windows.
+
+Key Requirements:
+1. User-friendly GUI for Windows.
+2. Accurate tallying of votes.
+3. Secure and reliable voting process.
+      </textarea>
+      <label>Specification and Time Limit</label>
+      <textarea style="height: 100px;" placeholder="Give your Specification and the limitations"></textarea>
+
+      <div class="suggestion-box">
+        <p >Based on the description you have written, we recommend posting a project. Work with a freelancer 1-on-1 and only pay them when you're happy with the completed work.</p>
+      </div>
+  
+      <div class="btn">
+        <a href="page1.html" target="_blank" id="one" onclick="submit()">Post</a>
+      </div>
+    </form>
+
+</div>
+
+<script>
+  let a = document.getElementById("one")
+
+  function submit()
+  {
+    alert("Project posted successfully!!")
+  }
+</script>
+
+</body>
+</html>

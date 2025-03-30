@@ -1,0 +1,141 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1523;
+    color: #fff;
+
+    flex-direction: column;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #0b1523;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 27px;
+    font-weight: bold;
+    border: 2px solid #5dc1b9;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links a{
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.auth-buttons a{
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.auth-buttons .signup-btn {
+    padding: 8px 16px;
+    background-color: #0066ff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content:left;
+    height: 110vh; 
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.profile {
+    background-color: white;
+    background: transparent;
+    border-radius: 15px;
+    max-width: 700px; 
+    width: 100%; 
+    padding: 40px;
+    box-shadow: 0 4px 16px rgba(130, 208, 239, 0.9); 
+    height: 60%;
+    margin-bottom: 40px;
+}
+
+.header {
+    display:block;
+    justify-content: left; 
+    margin-bottom: 20px; 
+    width: 200px;
+    height: 200px;
+}
+
+.aaa {
+    padding: 9px 20px;
+    background-color: #c8cbd0;
+    color: #666464;
+    text-decoration: none;
+    display: inline-block;
+    margin: 40px;
+    border-radius: 7px;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.zzz {
+    padding: 9px 30px;
+    background-color: #0066ff;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin: 40px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.contain{
+    display: flex;
+    flex: 1;
+    width: 90px;
+    height: 150px;
+}
+
+.content-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.right-image {
+    max-width: 100%;
+    width: 10%;
+    height: 10%;
+    border-radius: 360px;
+    
+    right: 30px;
+    bottom: 30px;
+    margin-top: 50px;
+
+    
+}

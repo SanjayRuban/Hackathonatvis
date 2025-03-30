@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /*background:url(images/abc.jpg) no-repeat;*/
+    background-color: #0b1523;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #0b1523;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 27px;
+    font-weight: bold;
+    border: 2px solid #99529a;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    margin-top: -5px;
+    margin-left: -20px;
+}
+
+.logo:hover {
+    background-color:rgb(209, 167, 224);
+}
+
+.nav-links a{
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.auth-buttons a{
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.auth-buttons .signup-btn {
+    padding: 8px 16px;
+    background-color: #0066ff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    margin-top: -50px;
+}
+
+.profile {
+    background-color: white;
+    background: transparent;
+    border-radius: 15px;
+    max-width: 1300px; /* Set max width for desktop */
+    width: 100%; /* Full width up to max-width */
+    padding: 40px; /* Increase padding for spaciousness */
+    box-shadow: 0 4px 16px rgba(130, 208, 239, 0.9); /* Stronger shadow for depth */
+    border-color: #f78cf7;
+    text-align: center;
+    height: 60%;
+    margin-bottom: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between name and profile icon */
+    align-items: center;
+    margin-bottom: 20px; /* Add space below the header */
+}
+
+.profile-icon {
+    width: 160px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 15px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid #5370d6;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    margin-top: -5px;
+    margin-left: -20px;
+}
+
+
+.quotes {
+    margin: 20px 0;
+    margin-left: -300px;
+    margin-top: 60px;
+    font-size: 1.2em; /* Slightly larger text for emphasis */
+    line-height: 1.5; /* Better readability */
+    color: gainsboro;
+}
+
+.buttons {
+    display: flex;
+    margin-left: -200px;
+    margin-top: 50px;
+    justify-content: center; /* Center buttons */
+    gap: 20px; /* Add space between buttons */
+}
+
+.btn {
+    /* Allow buttons to grow equally */
+    width: 19%;
+    padding: 15px;
+    background-color:darkgrey;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color:rgb(148, 241, 191);
+}
+
+
+/* Media Query for mobile responsiveness */
+@media (max-width: 768px) {
+    .buttons {
+        flex-direction: column; /* Stack buttons on smaller screens */
+        gap: 10px; /* Reduce gap between buttons */
+    }
+
+    .btn {
+        width: 70%; /* Full width for buttons on mobile */
+    }
+
+    .header {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .profile-icon img {
+        margin-top: 10px; /* Add space above the icon */
+    }
+}

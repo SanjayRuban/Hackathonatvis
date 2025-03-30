@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Profile Page</title>
+    <link rel="stylesheet" href="page3.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">EDUVERSE</div>
+        <div class="nav-links" style="margin-left: -450px; margin-bottom: 20px;">
+            <a href="#" style=" margin-left: -200px;">Explore</a>
+            <a href="#" style="margin-left: 25px;">Hire an Expert</a>
+            <a href="#" style="margin-left: 25px;">About Us</a>
+        </div>    
+
+        
+        <div class="auth-buttons">
+            <a href="page2a.html" class="login-btn">Log In</a>
+            <a href="page2.html" class="signup-btn">Sign Up</a>
+        </div>
+    </nav>
+
+    <!-- <center>
+        <p> "Discover the joy of learning—your journey starts here!" </p>
+    </center>
+-->
+
+    <div class="container">
+        <div class="profile">
+            <div class="header">
+                <h1 id="customer-name" style="color:azure;">Welcome, [Customer Name] </h1> <!-- Customer name will be injected here -->
+                <div class="profile-icon">
+                    <a style="
+                        text-decoration: none;
+                        color: white;
+                        text-transform: uppercase;" href="page1.html" >HOME </a>
+                </div>
+            </div>
+            
+            <div class="quotes">
+                <h4 style="color: lavender; margin-left: 225px;"> "Discover the joy of learning—your journey starts here!" </h4>
+                <h4 style="color: lavender; margin-top: 20px; margin-left: 200px;">  Unlock Your Potential ! </h4>
+            </div>
+            <br>
+            <div class="buttons">
+                <a class="btn" href="page12.html" target="_blank" style="margin-right: -50px; margin-left: 10px; font-size: 15px;text-decoration: none;">Learn</a>
+                <a href="page4.html" target="_blank"><button class="btn" style="margin-left: 200px; width: 90%; font-size: 15px;">Freelance</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to handle the dynamic name display -->
+    <script>
+        // Simulate retrieving the customer's name from a backend or login process
+        const customerName = "Ahammad"; // You would typically get this from your server or authentication logic
+
+        // Inject the customer's name into the HTML
+        document.getElementById("customer-name").textContent = "Welcome, " + customerName + " !";
+    </script>
+</body>
+</html> 

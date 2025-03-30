@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1523;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #135bc0;
+    height: 85px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 27px;
+    font-weight: bold;
+    border: 2px solid #5dc1b9;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links a{
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.auth-buttons a{
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.auth-buttons .signup-btn {
+    padding: 8px 16px;
+    background-color: #0066ff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container{
+    box-shadow: 0 4px 16px rgba(239, 130, 139, 0.9);
+    border-radius: 7px;
+    width: 95%;
+    justify-content: center;
+    margin: 30px;
+    margin-right: 150px;
+    font-size: 17px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+}
+
+
+.bbb{
+    display: flex;
+    align-items: start;
+}
+
+.bbb img{
+    width: 230px;
+    height: 230px;
+    border: 2px solid #b9bfc7;
+    margin: 50px;
+    display: inline-block;
+    border-radius: 7px;
+}
+
+.htitle{
+    justify-content: space-around;
+    width: 70%;
+    height: -30px;
+    
+}
+
+.hhh{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.contain{
+    display: flex;
+    height: 450vh;
+    justify-content: center;
+    margin-top: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.content {
+    background-color: white;
+    background: transparent;
+    border-radius: 15px;
+    max-width: 1150px; 
+    width : 100%;
+    padding: 40px;
+    box-shadow: 0 4px 16px rgba(130, 208, 239, 0.9); 
+    height: 50%;
+    margin-bottom: 40px;
+
+}

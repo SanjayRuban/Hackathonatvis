@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Plan 1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+}
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/back.jpg');
+    background-size: cover; /* Ensures the background image always covers the viewport */
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    min-height: 110vh; /* Ensures the body always takes at least the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content to the top */
+        }
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.fruits {
+    display: block; /* Change to block-level to align vertically */
+    margin: 10px auto; /* Center the dropdowns with some margin between them */
+    padding: 10px;
+    width: 250px; /* Adjust width of the dropdown */
+}
+
+.hi {
+    background-color: #F4C987;
+}
+
+.hi1 {
+    background-color: #6FA3DC;
+}
+
+.styleh2 {
+    background-color: blue;
+    position: absolute;
+    left: 50%;
+    margin-left: -112px;
+    color: white;
+    width: 210px;
+    height: 30px;
+    padding: 4px 4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.but {
+    background-color: blue;
+    position: absolute;
+    left: 50%;
+    margin-left: 3px;
+    text-decoration: none;
+    color: white;
+    width: 90px;
+    height: 40px;
+    padding: 4px 4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom:20px;
+}
+
+.navbar {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #135bc0;
+    height: 50px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 27px;
+    font-weight: bold;
+    border: 2px solid #5dc1b9;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.auth-buttons a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.auth-buttons .signup-btn {
+    padding: 8px 16px;
+    background-color: #0066ff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    
+    <form>
+        <nav class="navbar">
+            <div class="logo">EDUVERSE</div>
+            <div class="nav-links" style="margin-left: -370px; margin-bottom: -7px;">
+                <a href="#" style="margin-left: -200px;">How it Works</a>
+                <a href="#" style="margin-left: 25px;">About</a>
+                <a href="#" style="margin-left: 16px;">Resources</a>
+            </div>    
+    
+            <div class="auth-buttons">
+                <a href="page1.html" class="login-btn">Home</a>
+                <a href="page2.html" class="signup-btn">Sign Up</a>
+            </div>
+        </nav>
+
+        <h1>Table of Contents</h1>
+        <h4 class="styleh2">Intro to C programming</h2>
+        <br><br><br><br>
+        <select class="fruits linkDropdown">
+            <option value="" disabled selected>Components for module 1</option>
+            <option value="https://drive.google.com/file/d/1-BCw_Rax_UqRXzsIAat7Cu6-EnKCOYtS/view?usp=drivesdk">setting up C environment</option>
+            <option value="https://drive.google.com/file/d/1-oCiMPa38lJMGudmK5b4eNmajMBYXiab/view?usp=drivesdk">Data types and comments</option>
+            <option class="hi" value="https://drive.google.com/file/d/1442YXtKWpfpNzAjHM_Rq3XtWewNH08wM/view?usp=drivesdk">Refer Material</option>
+            <option class="hi1" value="page15.html">Assignment</option>
+        </select>
+        <h4 class="styleh2">Basic syntax and structure</h2>
+        <br><br><br><br>
+        <select class="fruits linkDropdown">
+            <option value="" disabled selected>Components for module 2</option>
+            <option value="https://drive.google.com/file/d/1-JOVYUnu3x0IOPrCsmshISF1PypE4IL1/view?usp=drivesdk">Variables and constants</option>
+            <option value="https://drive.google.com/file/d/1-4I2BZyK6dNaQgT_ndT3QevLRRy23AKJ/view?usp=drivesdk">Keywords and identifiers</option>
+            <option class="hi" value="https://drive.google.com/file/d/1442YXtKWpfpNzAjHM_Rq3XtWewNH08wM/view?usp=drivesdk">Refer Material</option>
+            <option class="hi1" value="page16.html">Assignment</option>
+        </select>
+        <h4 class="styleh2">Operators and expressions</h2>
+        <br><br><br><br>
+        <select class="fruits linkDropdown">
+            <option value="" disabled selected>Components for module 3</option>
+            <option value="https://drive.google.com/file/d/1-Th5Xq4-RfAubKADxHSc_3xe5JuhNw0I/view?usp=drivesdk">Types of operators</option>
+            <option value="https://drive.google.com/file/d/1-CrVUhUjthoAbkZPSvUyVAgS7XfSpo3M/view?usp=drivesdk">Precedence</option>
+            <option class="hi" value="https://drive.google.com/file/d/1442YXtKWpfpNzAjHM_Rq3XtWewNH08wM/view?usp=drivesdk">Refer Material</option>
+            <option class="hi1" value="page17.html">Assignment</option>
+        </select>
+        <h4 class="styleh2" >Control structures and functions</h2>
+        <br><br><br><br>
+        <select class="fruits linkDropdown">
+            <option value="" disabled selected>Components for module 4</option>
+            <option value="https://drive.google.com/file/d/1-8hVuyvVFeZM8bSOCKPDL2zozoWLgDZ-/view?usp=drivesdk">Conditional and control statements</option>
+            <option value="https://drive.google.com/file/d/1-Qa3aDiMjKH2fyAqF6qPRtJkNq-FXWO_/view?usp=drivesdk">Functions</option>
+            <option class="hi" value="https://drive.google.com/file/d/1442YXtKWpfpNzAjHM_Rq3XtWewNH08wM/view?usp=drivesdk">Refer Material</option>
+            <option class="hi1" value="page18.html">Assignment</option>
+        </select>
+
+        <script>
+            document.querySelectorAll(".linkDropdown").forEach(function(dropdown) {
+                dropdown.addEventListener("change", function() {
+                    const selectedValue = this.value;
+                    if (selectedValue) {
+                        window.location.href = selectedValue;
+                    }
+                });
+            });
+        </script>
+        <br>        
+        <a class="but" style="margin-left:-100px;width: 76px; height: 30px;" href="page12.html" target="_blank">Back</a>
+
+        <button class="but" type="reset" value="reset">clear</button>
+    </form>
+</body>
+</html>

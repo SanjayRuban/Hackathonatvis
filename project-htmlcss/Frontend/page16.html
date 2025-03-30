@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: orange;
+            margin-top: 10px;
+        }
+
+        /* Card Styles */
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #0C1524;
+        }
+
+        .card-header h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        ol {
+            margin-left: 20px;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        ol li {
+            margin-bottom: 15px;
+        }
+
+        /* Option Styles */
+        .form-check {
+            margin: 5px 0;
+        }
+
+        .form-check-label {
+            font-family: Arial, sans-serif;
+            font-size: 0.9rem;
+            color: white;
+            margin-left: 5px;
+        }
+
+        /* Button Styles */
+        .submit-btn {
+            display: block;
+            width: 30%;
+            padding: 10px;
+            border: none;
+            background-color: blue;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 270px;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #135bc0;
+            height: 85px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 27px;
+            font-weight: bold;
+            border: 2px solid #5dc1b9;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+        }
+
+        .nav-links a {
+            color: #fff;
+            margin-right: 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .auth-buttons a {
+            color: #fff;
+            margin-right: 20px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .auth-buttons .signup-btn {
+            padding: 8px 16px;
+            background-color: #0066ff;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style="background-color: #0C1524;">
+    <nav class="navbar">
+        <div class="logo">EDUVERSE</div>
+        <div class="nav-links" style="margin-left: -370px; margin-bottom: -7px;">
+            <a href="#" style="margin-left: -200px;">How it Works</a>
+            <a href="#" style="margin-left: 25px;">About</a>
+            <a href="#" style="margin-left: 16px;">Resources</a>
+        </div>    
+
+        <div class="auth-buttons">
+            <a href="page1.html" class="login-btn">Home</a>
+            <a href="page2.html" class="signup-btn">Sign Up</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Assignment page</h1>
+
+        <!-- Topic 1 Section -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Topics Covered: "Setting up C environment" and "Datatypes and Comments"</h2>
+            </div>
+            <div class="card-body">
+                <form>
+                    <ol>
+                        <li>
+                            <strong>Which tool is essential for compiling C programs on most systems?</strong>
+                            <div class="form-check">
+                                <input type="radio" name="question1" id="q1a" value="a">
+                                <label for="q1a">a) Git</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="question1" id="q1b" value="b">
+                                <label for="q1b">b) GCC</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="question1" id="q1c" value="c">
+                                <label for="q1c">c) Docker</label>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>What is the main function of an Integrated Development Environment (IDE) for C programming?</strong>
+                            <div class="form-check">
+                                <input type="radio" name="question2" id="q2a" value="a">
+                                <label for="q2a">a) It only allows you to compile code.</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="question2" id="q2b" value="b">
+                                <label for="q2b">b) It provides an interface for writing, compiling, and debugging code.</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="question2" id="q2c" value="c">
+                                <label for="q2c">c) It is used exclusively for testing hardware compatibility.</label>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Which of the following commands would you typically use to compile a C program from the command line using GCC?</strong>
+                            <div class="form-check">
+                                <input type="radio" name="question3" id="q3a" value="a">
+                                <label for="q3a">a) gcc program.c -o program</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="question3" id="q3b" value="b">
+                                <label for="q3b">b) gcc compile program.c</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="question3" id="q3c" value="c">
+                                <label for="q3c">c) run program.c</label>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>When setting up the environment on a Linux machine, which of these would install the C compiler using the terminal?</strong>
+                            <div class="form-check">
+                                <input type="radio" name="question4" id="q4a" value="a">
+                                <label for="q4a">a) apt-get install python3</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="question4" id="q4b" value="b">
+                                <label for="q4b">b) apt-get install gcc</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="question4" id="q4c" value="c">
+                                <label for="q4c">c) apt-get install java</label>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Which file extension is typically used for C source files?</strong>
+                            <div class="form-check">
+                                <input type="radio" name="question5" id="q5a" value="a">
+                                <label for="q5a">a) .txt</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="question5" id="q5b" value="b">
+                                <label for="q5b">b) .c</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="question5" id="q5c" value="c">
+                                <label for="q5c">c) .exe</label>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>In C, which of the following data types would be the best choice to store the value 3.14159?</strong>
+                            <div class="form-check">
+                                <input type="radio" name="question6" id="q6a" value="a">
+                                <label for="q6a">a) int</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="question6" id="q6b" value="b">
+                                <label for="q6b">b) char</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="question6" id="q6c" value="c">
+                                <label for="q6c">c) float</label>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>What is the correct syntax for adding a single-line comment in C?</strong>
+                            <div class="form-check">
+                                <input type="radio" name="question7" id="q7a" value="a">
+                                <label for="q7a">a) /* This is a comment */</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="question7" id="q7b" value="b">
+                                <label for="q7b">b) # This is a comment</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="question7" id="q7c" value="c">
+                                <label for="q7c">c) // This is a comment</label>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>What is the size of an int data type in a typical 32-bit system?</strong>
+                            <div class="form-check">
+                                <input type="radio" name="question8" id="q8a" value="a">
+                                <label for="q8a">a) 8 Bytes</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="question8" id="q8b" value="b">
+                                <label for="q8b">b) 4 Bytes</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="question8" id="q8c" value="c">
+                                <label for="q8c">c) 2 Bytes</label>
+                            </div>
+                        </li>
+                    </ol>
+                    <button type="button" onclick="checkAnswers()" class="submit-btn">Submit Assignment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+	<script>
+    // Check if the module is completed when the page loads
+    window.onload = function() {
+        // If module 1 is already completed, show an alert message
+        if (localStorage.getItem("module1Completed") === "true") {
+    alert("You have already completed Module 2!");
+	 window.location.href = "page14.html";
+     // Redirects to example.html
+}
+
+    };
+
+    function checkAnswers() {
+        let correctAnswers = 0;
+
+        // Check each question
+        if (document.querySelector('input[name="question1"]:checked')?.value === 'b') correctAnswers++;
+        if (document.querySelector('input[name="question2"]:checked')?.value === 'b') correctAnswers++;
+        if (document.querySelector('input[name="question3"]:checked')?.value === 'a') correctAnswers++;
+        if (document.querySelector('input[name="question4"]:checked')?.value === 'b') correctAnswers++;
+        if (document.querySelector('input[name="question5"]:checked')?.value === 'b') correctAnswers++;
+        if (document.querySelector('input[name="question6"]:checked')?.value === 'c') correctAnswers++;
+        if (document.querySelector('input[name="question7"]:checked')?.value === 'c') correctAnswers++;
+        if (document.querySelector('input[name="question8"]:checked')?.value === 'b') correctAnswers++;
+
+        // If score is 8 or more
+        if (correctAnswers >= 6) {
+            // Store completion status in localStorage
+            localStorage.setItem("module1Completed", "true");
+
+            // Show a confirmation message with a continue option
+            const proceed = confirm("You have completed Module 1 with " + correctAnswers + " correct answers. Do you want to continue?");
+            if (proceed) {
+                window.location.href = 'page14.html'; // Redirect to example.html if they choose to continue
+            }
+        } else {
+            alert("You have to get more than 6 correct answers. Please redo the assignment.");
+        }
+    }
+</script>
+
+</body>
+</html>

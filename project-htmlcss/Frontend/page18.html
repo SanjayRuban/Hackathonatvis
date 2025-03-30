@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <style>
+	    .badgePopup img {
+        display: none;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 80px; /* Increased padding for larger popup */
+        width: 500px; /* Increased width for larger popup */
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: center;
+    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: orange;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #0C1524;
+        }
+
+        .card-header h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        ol {
+            margin-left: 20px;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        ol li {
+            margin-bottom: 15px;
+        }
+
+        .form-check {
+            margin: 5px 0;
+        }
+
+        .form-check-label {
+            font-family: Arial, sans-serif;
+            font-size: 0.9rem;
+            color: white;
+            margin-left: 5px;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 30%;
+            padding: 10px;
+            border: none;
+            background-color: blue;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 270px;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 50px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .popup img {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .popup button {
+            padding: 15px 30px;
+            margin-top: 20px;
+            background-color: #0066ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+		.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #135bc0;
+    height: 85px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 27px;
+    font-weight: bold;
+    border: 2px solid #5dc1b9;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links a{
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.auth-buttons a{
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.auth-buttons .signup-btn {
+    padding: 8px 16px;
+    background-color: #0066ff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body style="background-color: #0C1524;">
+<nav class="navbar">
+            <div class="logo">EDUVERSE</div>
+            <div class="nav-links" style="margin-left: -370px; margin-bottom: -7px;">
+                <a href="#" style="margin-left: -200px;">How it Works</a>
+                <a href="#" style="margin-left: 25px;">About</a>
+                <a href="#" style="margin-left: 16px;">Resources</a>
+            </div>    
+    
+            <div class="auth-buttons">
+                <a href="page1.html" class="login-btn">Home</a>
+                <a href="page2.html" class="signup-btn">Sign Up</a>
+            </div>
+        </nav>
+<div class="container">
+    <h1>Assignment Page</h1>
+
+    <div class="card">
+        <div class="card-header">
+            <h2>Topics Covered: "Conditional Statements" and "Control Statements"</h2>
+        </div>
+        <div class="card-body">
+            <form id="quizForm">
+                <ol>
+                    <li>
+                        <strong>In an if statement, what happens if you omit the else part?</strong>
+                        <div class="form-check">
+                            <input type="radio" name="q1" value="b"> The program will proceed without executing any alternative code.
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="q1" value="a"> The program will not run.
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="q1" value="c"> The compiler will generate an error.
+                        </div>
+                    </li>
+                    <li>
+                        <strong>What is the output of the following code snippet?</strong>
+                        <pre>
+x = 5
+if x > 3:
+    if x < 10:
+        print("A")
+    else:
+        print("B")
+                        </pre>
+                        <div class="form-check">
+                            <input type="radio" name="q2" value="a"> "A"
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="q2" value="b"> "B"
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="q2" value="c"> No output
+                        </div>
+                    </li>
+                    <li>
+                        <strong>In nested if-else statements, which part is executed if none of the if conditions are met and there is no else provided?</strong>
+                        <div class="form-check">
+                            <input type="radio" name="q3" value="a"> The first if condition's block is executed.
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="q3" value="b"> The program exits with an error.
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="q3" value="c"> No block is executed.
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Which of the following is true about the switch statement in Python?</strong>
+                        <div class="form-check">
+                            <input type="radio" name="q4" value="a"> Python supports switch statements.
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="q4" value="b"> switch statements are replaced by if-elif-else in Python.
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="q4" value="c"> switch statements are used for conditional loops in Python.
+                        </div>
+                    </li>
+                    <li>
+                        <strong>What will be the output of the following code?</strong>
+                        <pre>
+for i in range(3):
+    if i == 2:
+        break
+    print(i)
+                        </pre>
+                        <div class="form-check">
+                            <input type="radio" name="q5" value="a"> 0 1 2
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="q5" value="b"> 0 1
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="q5" value="c"> 0
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Which of the following statements skips the current iteration in a loop and moves to the next iteration?</strong>
+                        <div class="form-check">
+                            <input type="radio" name="q6" value="a"> continue
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="q6" value="b"> break
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="q6" value="c"> pass
+                        </div>
+                    </li>
+                    <li>
+                        <strong>What does the pass statement do in a Python loop?</strong>
+                        <div class="form-check">
+                            <input type="radio" name="q7" value="a"> Ends the loop.
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="q7" value="b"> Skips the current iteration.
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="q7" value="c"> Does nothing, it’s a placeholder.
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Which control statement can be used to exit a loop immediately?</strong>
+                        <div class="form-check">
+                            <input type="radio" name="q8" value="a"> continue
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="q8" value="b"> exit
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="q8" value="c"> break
+                        </div>
+                    </li>
+                </ol>
+                <button type="button" class="submit-btn" onclick="submitQuiz()">Submit Assignment</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="popup" class="popup">
+    <p id="popupMessage"></p>
+    <button id="badgeButton" style="display: none;margin-left:40px;" onclick="showBadgePopup()">Receive Badge</button>
+</div>
+
+<div id="badgePopup" class="popup">
+    <img src="images/Eduverse C.jpg" alt="Badge">
+    <p>You have earned the badge Congrats!!!, but to gain the certificate, you need to complete freelance projects.</p>
+    <button onclick="window.location.href='page3.html'">Go to Freelance</button>
+    <button onclick="window.location.href='page12.html'">Continue Learning</button>
+</div>
+<div id="failPopup" class="popup" style="display: none;">
+    <p id="failPopupMessage"></p>
+    <button onclick="document.getElementById('failPopup').style.display='none'">OK</button>
+</div>
+<script>
+     window.onload = function() {
+        // If module 1 is already completed, show an alert message
+        if (localStorage.getItem("module1Completed") === "true") {
+		    showBadgePopup();
+            alert("You have Completed the course!!!");
+			
+        }
+    };
+
+    function submitQuiz() {
+    const form = document.getElementById('quizForm');
+    const answers = ['b', 'a', 'c', 'b', 'b', 'a', 'c', 'c'];
+    let score = 0;
+    
+    for (let i = 0; i < answers.length; i++) {
+        const selectedOption = form[`q${i + 1}`];
+        let selectedValue = '';
+
+        // Check if an option is selected
+        for (let option of selectedOption) {
+            if (option.checked) {
+                selectedValue = option.value;
+                break;
+            }
+        }
+
+        if (!selectedValue) {
+            alert(`Please answer question ${i + 1} before submitting.`);
+            return; // Stop execution if any question is unanswered
+        }
+
+        if (selectedValue === answers[i]) {
+            score++;
+        }
+    }
+
+    const popup = document.getElementById('popup');
+    const message = document.getElementById('popupMessage');
+    const badgeButton = document.getElementById('badgeButton');
+
+    if (score >= 6) {
+        localStorage.setItem("module1Completed", "true");
+        message.innerText = `You scored ${score}/8. Great job!\nYou have completed this course, gain badge for course completion`;
+        badgeButton.style.display = 'inline-block';
+        popup.style.display = 'block';
+    } else {
+        alert(`You scored ${score}/8. Try again.`);
+    }
+}
+
+    function showBadgePopup() {
+        const badgePopup = document.getElementById('badgePopup');
+        badgePopup.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
+
