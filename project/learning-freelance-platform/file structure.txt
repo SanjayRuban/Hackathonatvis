@@ -1,0 +1,44 @@
+project-root/
+├── client/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Auth/
+│   │   │   │   └── Login.js
+│   │   │   ├── Learning/
+│   │   │   │   ├── CourseList.js
+│   │   │   │   ├── CourseDescription.js
+│   │   │   │   ├── CourseContent.js
+│   │   │   │   └── CourseCompletion.js
+│   │   │   ├── Freelance/
+│   │   │   │   ├── FreelanceOptions.js
+│   │   │   │   ├── PostWork.js
+│   │   │   │   ├── DoWork.js
+│   │   │   │   ├── UploadBadge.js
+│   │   │   │   └── AvailableWork.js
+│   │   │   └── MainDashboard.js
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   ├── styles/
+│   │   │   └── App.css
+│   │   └── utils/
+│   │       └── api.js
+├── server/
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── courseController.js
+│   │   └── freelanceController.js
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Course.js
+│   │   ├── Module.js
+│   │   ├── UserProgress.js
+│   │   └── FreelanceWork.js
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── courseRoutes.js
+│   │   └── freelanceRoutes.js
+│   ├── config/
+│   │   └── db.js
+│   └── server.js
+├── package.json
